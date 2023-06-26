@@ -28,6 +28,18 @@ class Badge extends React.Component {
   }
 }
 
+
+
+Badge.propTypes = {
+name: PropTypes.string.isRequired,
+handle: PropTypes.string.isRequired,
+img: PropTypes.string.isRequired,
+authed: PropTypes.bool,
+style: PropTypes.object.isRequired,
+addFriend: PropTypes.func.isRequired,
+
+ }
+
 export default function App() {
   return (
     <Badge
